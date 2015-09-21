@@ -1,0 +1,36 @@
+﻿<Window x:Class="DiabloCoETimerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiabloCoETimerWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="409.659" Width="540.909">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Name="lblTimer" FontFamily="Arial" FontSize="40" Content="{Binding MainTimer}" Margin="10" HorizontalAlignment="Center" Foreground="{Binding MainTimerColor}"/>
+            <Button Margin="5" Name="btnReset" Content="Reset to Fire" Click="btnReset_Click"/>
+            <GroupBox Margin="15" Header="Class">
+                <StackPanel>
+                    <RadioButton Margin="3" Content="Barbarian" IsChecked="{Binding IsBarb}"/>
+                    <RadioButton Margin="3" Content="Monk" IsChecked="{Binding IsMonk}"/>
+                    <RadioButton Margin="3" Content="Demon hunter" IsChecked="{Binding IsDH}"/>
+                    <RadioButton Margin="3" Content="Witch doctor" IsChecked="{Binding IsWD}"/>
+                    <RadioButton Margin="3" Content="Crusader" IsChecked="{Binding IsCrusader}"/>
+                    <RadioButton Margin="3" Content="Wizard" IsChecked="{Binding IsSorc}"/>
+                </StackPanel>
+            </GroupBox>
+            <CheckBox Content="Show label (always on top)" Margin="5" IsChecked="{Binding IsLabelOnTop}"/>
+            <CheckBox Content="Sound" Margin="5"/>
+        </StackPanel>
+        <GroupBox Grid.Column="2" Header="Settings">
+            <StackPanel>
+
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>

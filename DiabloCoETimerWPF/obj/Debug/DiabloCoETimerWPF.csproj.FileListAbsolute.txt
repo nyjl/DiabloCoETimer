@@ -1,0 +1,16 @@
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\bin\Debug\DiabloCoETimerWPF.exe.config
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\bin\Debug\DiabloCoETimerWPF.exe
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\bin\Debug\DiabloCoETimerWPF.pdb
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.csprojResolveAssemblyReference.cache
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\MainWindow.g.cs
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\App.g.cs
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF_MarkupCompile.cache
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF_MarkupCompile.lref
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\MainWindow.baml
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.g.resources
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.Properties.Resources.resources
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.csproj.GenerateResource.Cache
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.exe
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.pdb
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\TimerLabel.g.cs
+c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\TimerLabel.baml
