@@ -47,6 +47,12 @@ namespace DiabloCoETimerWPF {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public void InitializeComponent() {
             
+            #line 6 "..\..\App.xaml"
+            this.Exit += new System.Windows.ExitEventHandler(this.Application_Exit);
+            
+            #line default
+            #line hidden
+            
             #line 5 "..\..\App.xaml"
             this.StartupUri = new System.Uri("MainWindow.xaml", System.UriKind.Relative);
             

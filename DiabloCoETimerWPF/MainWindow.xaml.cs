@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,13 +25,18 @@ namespace DiabloCoETimerWPF
         public MainWindow()
         {
             InitializeComponent();
-            _viewModel = new MainWindowViewModel();
+            _viewModel = new MainWindowViewModel(this);
             DataContext = _viewModel;
         }
 
         public void btnReset_Click(object sender, RoutedEventArgs e)
         {
             _viewModel.btnReset_Click();
+        }
+
+        private void Path_Click(object sender, RoutedEventArgs e)
+        {
+            _viewModel.Path_Click();
         }
     }
 }

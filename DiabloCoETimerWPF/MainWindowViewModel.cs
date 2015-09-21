@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
@@ -36,12 +38,16 @@ namespace DiabloCoETimerWPF
         private const int COE_DURATION = 4;
         private const int TIMER_TICK = 1;
 
+        private SoundPlayer _player;
+        private string _soundPath;
         private DispatcherTimer _timer;
         private TimeSpan _time;
         private MagicSchool _currentSchool;
+        private List<MagicSchool> _favouriteSchools = new List<MagicSchool> { MagicSchool.Physical };
 
         private bool _isLabelOnTop;
         private TimerLabel _labelWindow;
+        private MainWindow _mainWindow;
 
         public Class Class
         {
@@ -89,6 +95,26 @@ namespace DiabloCoETimerWPF
         public bool IsCrusader { get; set; }
         public bool IsSorc { get; set; }
 
+        public List<string> FavouriteSchoolOptions
+        {
+            get
+            {
+                return Enum.GetNames(typeof(MagicSchool)).ToList();
+            }
+        }
+
+        public MagicSchool FavouriteSchool //todo: multiple fav
+        {
+            get
+            {
+                return _favouriteSchools[0];
+            }
+            set
+            {
+                _favouriteSchools = new List<MagicSchool> {value};
+            }
+        }
+
         public string MainTimer
         {
             get
@@ -135,8 +161,10 @@ namespace DiabloCoETimerWPF
                 if (_isLabelOnTop)
                 {
                     _labelWindow = new TimerLabel(this);
+                    _labelWindow.Left = _mainWindow.Left;
+                    _labelWindow.Top = _mainWindow.Top;
                     _labelWindow.Topmost = true;
-                    _labelWindow.Deactivated += (o,e) => { _labelWindow.Topmost = true; };
+                    _labelWindow.Deactivated += (o, e) => { _labelWindow.Topmost = true; };
                     _labelWindow.Show();
                 }
                 else
@@ -146,8 +174,28 @@ namespace DiabloCoETimerWPF
             }
         }
 
-        public MainWindowViewModel()
+        public string SoundPath
         {
+            get
+            {
+                return _soundPath;
+            }
+            set
+            {
+                _soundPath = value;
+                _player = new SoundPlayer(_soundPath);
+            }
+        }
+
+        public bool IsSoundOn
+        {
+            get;
+            set;
+        }
+
+        public MainWindowViewModel(MainWindow mainWindow)
+        {
+            _mainWindow = mainWindow;
             _timer = new DispatcherTimer();
             _timer.Interval = TimeSpan.FromSeconds(TIMER_TICK);
             _timer.Tick += timer_Tick;
@@ -175,6 +223,18 @@ namespace DiabloCoETimerWPF
             RaisePropertyChanged("MainTimer");
         }
 
+        public void Path_Click()
+        {
+            var dialog = new OpenFileDialog();
+            dialog.DefaultExt = ".wav";
+
+            if (dialog.ShowDialog() != true)
+                return;
+
+            SoundPath = dialog.FileName;
+            RaisePropertyChanged("SoundPath");
+        }
+
         private void MoveToNextSchool()
         {
             var index = Array.IndexOf(AvailableSchools, _currentSchool) + 1;
@@ -182,6 +242,8 @@ namespace DiabloCoETimerWPF
                 index = 0;
 
             _currentSchool = AvailableSchools[index];
+            if (_favouriteSchools.Contains(_currentSchool) && _player != null && IsSoundOn)
+                _player.Play();
 
             RaisePropertyChanged("MainTimerColor");
         }

@@ -14,3 +14,19 @@ c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloC
 c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.pdb
 c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\TimerLabel.g.cs
 c:\users\konyaev\documents\visual studio 2015\Projects\DiabloCoETimerWPF\DiabloCoETimerWPF\obj\Debug\TimerLabel.baml
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\bin\Debug\DiabloCoETimerWPF.exe.config
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.exe
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.pdb
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\bin\Debug\DiabloCoETimerWPF.exe
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\bin\Debug\DiabloCoETimerWPF.pdb
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.csprojResolveAssemblyReference.cache
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\MainWindow.g.cs
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\TimerLabel.g.cs
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\App.g.cs
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF_MarkupCompile.cache
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF_MarkupCompile.lref
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\MainWindow.baml
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\TimerLabel.baml
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.g.resources
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.Properties.Resources.resources
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Debug\DiabloCoETimerWPF.csproj.GenerateResource.Cache

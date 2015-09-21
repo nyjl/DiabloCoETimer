@@ -25,11 +25,15 @@
                 </StackPanel>
             </GroupBox>
             <CheckBox Content="Show label (always on top)" Margin="5" IsChecked="{Binding IsLabelOnTop}"/>
-            <CheckBox Content="Sound" Margin="5"/>
+            <CheckBox Content="Sound" Margin="5" IsChecked="{Binding IsSoundOn}"/>
         </StackPanel>
         <GroupBox Grid.Column="2" Header="Settings">
             <StackPanel>
-
+                <WrapPanel Margin="5">
+                    <TextBox Name="SoundPath" Text="{Binding SoundPath}" Margin="3"/>
+                    <Button Name="Path" Content="Path" Click="Path_Click" Margin="3"/>
+                </WrapPanel>
+                <ComboBox ItemsSource="{Binding FavouriteSchoolOptions}" SelectedItem="{Binding FavouriteSchool}" Margin="10"/>
             </StackPanel>
         </GroupBox>
     </Grid>
