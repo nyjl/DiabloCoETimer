@@ -29,10 +29,12 @@
         </StackPanel>
         <GroupBox Grid.Column="2" Header="Settings">
             <StackPanel>
-                <WrapPanel Margin="5">
-                    <TextBox Name="SoundPath" Text="{Binding SoundPath}" Margin="3"/>
-                    <Button Name="Path" Content="Path" Click="Path_Click" Margin="3"/>
-                </WrapPanel>
+                <DockPanel Margin="5">
+                    <Button Name="Path" Content="Path" Click="Path_Click" Margin="3" DockPanel.Dock="Right"/>
+                    <TextBox Name="SoundPath" Text="{Binding SoundPath}" 
+                             DockPanel.Dock="Left" Margin="3"/>
+                    
+                </DockPanel>
                 <ComboBox ItemsSource="{Binding FavouriteSchoolOptions}" SelectedItem="{Binding FavouriteSchool}" Margin="10"/>
             </StackPanel>
         </GroupBox>

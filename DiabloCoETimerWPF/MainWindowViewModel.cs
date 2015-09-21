@@ -36,10 +36,12 @@ namespace DiabloCoETimerWPF
     public class MainWindowViewModel : INotifyPropertyChanged
     {
         private const int COE_DURATION = 4;
-        private const int TIMER_TICK = 1;
+        private const float TIMER_TICK = 0.001f;
 
+        private TimeSpan _lastTime = TimeSpan.FromSeconds(0);
         private SoundPlayer _player;
         private string _soundPath;
+        private Stopwatch _stopwatch = Stopwatch.StartNew();
         private DispatcherTimer _timer;
         private TimeSpan _time;
         private MagicSchool _currentSchool;
@@ -111,7 +113,7 @@ namespace DiabloCoETimerWPF
             }
             set
             {
-                _favouriteSchools = new List<MagicSchool> {value};
+                _favouriteSchools = new List<MagicSchool> { value };
             }
         }
 
@@ -119,7 +121,7 @@ namespace DiabloCoETimerWPF
         {
             get
             {
-                return _time.ToString("ss");
+                return _time.ToString("s'.'f");//.Replace(':','.');
             }
         }
 
@@ -204,6 +206,9 @@ namespace DiabloCoETimerWPF
 
         public void btnReset_Click()
         {
+            //_stopwatch.Reset();
+            //_stopwatch.Start();
+            _lastTime = _stopwatch.Elapsed;
             _time = TimeSpan.FromSeconds(COE_DURATION);
             _currentSchool = MagicSchool.Fire;
             _timer.Stop();
@@ -214,10 +219,11 @@ namespace DiabloCoETimerWPF
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            _time -= TimeSpan.FromSeconds(TIMER_TICK);
+            _time -= _stopwatch.Elapsed - _lastTime;
+            _lastTime = _stopwatch.Elapsed;
             if (_time <= TimeSpan.Zero)
             {
-                _time = TimeSpan.FromSeconds(COE_DURATION);
+                _time += TimeSpan.FromSeconds(COE_DURATION);
                 MoveToNextSchool();
             }
             RaisePropertyChanged("MainTimer");

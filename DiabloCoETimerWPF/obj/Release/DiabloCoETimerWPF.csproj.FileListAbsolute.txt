@@ -13,3 +13,4 @@ C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.Properties
 C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.csproj.GenerateResource.Cache
 C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.exe
 C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.pdb
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.csprojResolveAssemblyReference.cache
