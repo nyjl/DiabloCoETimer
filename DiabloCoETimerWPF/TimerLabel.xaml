@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiabloCoETimerWPF"
         mc:Ignorable="d"
-        Title="TimerLabel" Height="108.238" Width="76.705"
+        Title="TimerLabel" Height="208.238" Width="201.705"
         AllowsTransparency="True"
         WindowStyle="None"
         IsHitTestVisible="False">
