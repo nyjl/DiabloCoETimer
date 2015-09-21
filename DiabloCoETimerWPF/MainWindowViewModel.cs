@@ -132,7 +132,7 @@ namespace DiabloCoETimerWPF
                     case MagicSchool.Arcane:
                         return new SolidColorBrush(Colors.Pink);
                     case MagicSchool.Cold:
-                        return new SolidColorBrush(Colors.AliceBlue);
+                        return new SolidColorBrush(Colors.CadetBlue);
                     case MagicSchool.Fire:
                         return new SolidColorBrush(Colors.Red);
                     case MagicSchool.Holy:
