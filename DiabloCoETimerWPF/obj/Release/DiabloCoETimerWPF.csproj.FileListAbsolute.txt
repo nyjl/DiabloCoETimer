@@ -1,0 +1,15 @@
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\bin\Release\DiabloCoETimerWPF.exe.config
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\bin\Release\DiabloCoETimerWPF.exe
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\bin\Release\DiabloCoETimerWPF.pdb
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\MainWindow.g.cs
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\TimerLabel.g.cs
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\App.g.cs
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF_MarkupCompile.cache
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF_MarkupCompile.lref
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\MainWindow.baml
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\TimerLabel.baml
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.g.resources
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.Properties.Resources.resources
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.csproj.GenerateResource.Cache
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.exe
+C:\git\DiabloCoETimer\DiabloCoETimerWPF\obj\Release\DiabloCoETimerWPF.pdb
